@@ -7,11 +7,11 @@ header {
     background-color: #393e44;
     padding: 20px;
     height: 20px;
-    border-bottom: 3px solid #1bfca3;
+    border-bottom: 2px solid #1bfca3;
     align-items: center;
 }
 
-header button {
+.menu__button {
     display: none;
 }
 
@@ -25,14 +25,13 @@ nav {
     gap: 22px;
 }
 
-a {
+.header__link {
     color: white;
     font-size: 21px;
-    font-weight: 100;
     text-decoration-line: none;
 }
 
-a:hover {
+.header__link:hover {
     color: #1bfca3;
     font-size: 21px;
     text-decoration-line: underline;
@@ -46,13 +45,18 @@ html {
     scrollbar-width: none;
 }
 
-main {}
+.main__container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    background-color: #484e55;
+}
 
 .h3 {
     color: white;
 }
 
-.p {
+.main__text {
     color: white;
     font-weight: 10;
     font-size: 21px;
@@ -61,7 +65,7 @@ main {}
 }
 
 
-.main_container {
+.general_container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -78,13 +82,11 @@ main {}
     flex-direction: column;
     justify-content: center;
     justify-content: space-between;
+    gap: 70px;
     background-color: #393e44;
 }
 
 .items__subcontainer {
-    margin-top: 100px;
-    padding-left: 1%;
-    padding-right: 1%;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -93,7 +95,6 @@ main {}
 .items_h2 {
     color: #1bfca3;
     font-size: 30px;
-    padding-top: 5px;
     font-weight: 900;
     font-size: 30px;
     margin-bottom: 0;
@@ -141,19 +142,19 @@ main {}
 }
 
 .general__picture {
-    width: 80vw;
     box-shadow: 0px 10px 15px 10px #000;
 }
 
-.header {
+.footer_Name {
     color: #1bfca3;
     font-size: 22px;
 }
 
-.div {
+.Products {
     justify-content: space-between;
     display: flex;
     flex-direction: column;
+    gap: 0px;
     height: max-content;
     align-items: center;
 }
@@ -163,8 +164,6 @@ main {}
     background-color: #1bfca3;
 
 }
-
-.item__picture {}
 
 footer {
     display: flex;
@@ -178,13 +177,15 @@ footer {
     border-top: 1px solid #1bfca3;
 }
 
-footer a {
-    font-size: 18px;
+.footer__contact {
+    font-size: 21px;
+    color: white;
+    text-decoration-line: none;
 }
 
-footer a:hover {
+.footer__contact:hover {
     color: #1bfca3;
-    font-size: 18px;
+    font-size: 21px;
     text-decoration-line: underline;
 }
 
@@ -200,10 +201,6 @@ h2 {
         border: none;
         background-color: rgba(0, 0, 0, 0.01);
         margin-right: 2%;
-    }
-
-    header button {
-        display: block;
     }
 
     header {
