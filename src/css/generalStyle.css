@@ -15,12 +15,12 @@ header {
     display: none;
 }
 
-h1 {
+.header__title {
     color: #1bfca3;
     font-size: 25px;
 }
 
-nav {
+.header__menu {
     display: flex;
     gap: 22px;
 }
@@ -50,9 +50,10 @@ html {
     flex-direction: column;
     gap: 60px;
     background-color: #484e55;
+    padding-top: 10%;
 }
 
-.h3 {
+.general__subtitle {
     color: white;
 }
 
@@ -65,16 +66,14 @@ html {
 }
 
 
-.general_container {
+.general__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 60px;
     background-color: #484e55;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .items_container {
@@ -92,7 +91,15 @@ html {
     flex-wrap: wrap;
 }
 
-.items_h2 {
+.general__text {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    align-items: center;
+}
+
+.items__title {
     color: #1bfca3;
     font-size: 30px;
     font-weight: 900;
@@ -100,7 +107,7 @@ html {
     margin-bottom: 0;
 }
 
-.items__p {
+.items__text {
     text-align: center;
     color: white;
     padding: 0 1%;
@@ -109,7 +116,7 @@ html {
     font-size: 18px;
 }
 
-.item__title {
+.subitem__title {
     color: black;
     font-weight: 900;
     font-size: 24px;
@@ -117,7 +124,7 @@ html {
     padding-top: 25px;
 }
 
-.item__text {
+.subitem__text {
     padding-top: 50px;
     color: black;
     text-align: center;
@@ -136,7 +143,7 @@ html {
     box-shadow: 0px 10px 15px 10px #000;
 }
 
-.item__picture {
+.subitem__picture {
     box-shadow: 0px 10px 15px 10px #000;
     width: 100%;
 }
@@ -145,12 +152,12 @@ html {
     box-shadow: 0px 10px 15px 10px #000;
 }
 
-.footer_Name {
+.footer__title {
     color: #1bfca3;
     font-size: 22px;
 }
 
-.Products {
+.items__products {
     justify-content: space-between;
     display: flex;
     flex-direction: column;
@@ -159,19 +166,13 @@ html {
     align-items: center;
 }
 
-.item_h3 {
-    color: black;
-    background-color: #1bfca3;
-
-}
-
 footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: #393e44;
     padding: 20px;
-    height: 30px;
+    height: 50px;
     align-items: center;
     font-size: 20px;
     border-top: 1px solid #1bfca3;
@@ -185,11 +186,10 @@ footer {
 
 .footer__contact:hover {
     color: #1bfca3;
-    font-size: 21px;
     text-decoration-line: underline;
 }
 
-h2 {
+.general__title {
     color: #1bfca3;
     font-size: 22px;
     margin-top: 0;
@@ -204,20 +204,11 @@ h2 {
     }
 
     header {
-        display: flex;
-        position: fixed;
-        left: 0;
-        right: 0;
         padding-left: 5px;
-        justify-content: space-between;
-        background-color: #393e44;
-        height: 20px;
         border-bottom: 3px solid #1bfca3;
-        align-items: center;
     }
 
-    h1 {
-        color: #1bfca3;
+    .header__title {
         font-size: 20px;
     }
 
@@ -225,7 +216,7 @@ h2 {
         display: none;
     }
 
-    header nav {
+    .header__menu {
         display: none;
     }
 
