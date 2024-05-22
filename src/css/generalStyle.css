@@ -76,7 +76,7 @@ html {
     padding-right: 40px;
 }
 
-.items_container {
+.items__container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -110,7 +110,7 @@ html {
 .items__text {
     text-align: center;
     color: white;
-    padding: 0 1%;
+    padding: 0 1em;
     line-height: 2em;
     font-weight: 700;
     font-size: 18px;
@@ -200,7 +200,7 @@ footer {
         display: block;
         border: none;
         background-color: rgba(0, 0, 0, 0.01);
-        margin-right: 2%;
+        margin-right: 2em;
     }
 
     header {
